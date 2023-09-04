@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png " href="Pictures/vala-bleu-1.png">
+    <title>Document</title>
+</head>
+<style>
+  body {
+background:url(-mreflowMatt_Wolfe_a_colorful_digital_background_477e314c-c8c2-4491-88d5-1194cd417006.jpeg);
+font-family: Montserrat, "sans-serif";
+display: flex;
+justify-content: center;
+color: #000000;
+}
+
+.contact-us > h1 {
+color: aliceblue;
+text-align: center;
+font-weight: 500;
+transition: all 0.7s;
+}
+
+.contact-us > p {
+  color: aliceblue;
+font-weight: 300;
+transition: all 0.7s;
+}
+.contact-us>h1:hover,.contact-us>p:hover{
+  color: white;
+  transform: translateY(-10px);
+}
+form div {
+width: 100%;
+display: flex;
+flex-direction: column;
+min-height: 83px;
+margin-top: 25px;
+}
+
+form div > label {
+margin-bottom: 7px;
+font-weight: 600;
+}
+
+form div > input, form div > select, form div > textarea {
+background: #ffc8c8;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+font-weight: 500;
+font-family: Montserrat, "sans-serif";
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+}
+
+form div > input, form div > select {
+height: 50px;
+padding-left: 10px;
+}
+
+form div > select {
+appearance: none;
+background-size: 15px;
+background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+background-position: right 10px top 50%;
+background-repeat: no-repeat;
+}
+
+form div > textarea {
+height: 195px;
+padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+color: white;
+}
+
+form div > select:invalid {
+color: white;
+}
+
+form div > select option {
+background: white;
+color: #090909;
+}
+
+form div:last-child {
+align-items:center;
+margin-top: 20px;
+}
+
+form button {
+width: 400px;
+max-width: 300px;
+height: 60px;
+font-weight: 700;
+font-size: 19px;
+background: rgb(255, 255, 255);
+border: rgba(48, 48, 48, 0.5) solid 1px;
+border-radius: 20px;
+box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+color: #000000;
+transition: all 0.9s;
+}
+form button:hover{
+  background-color:#ffc8c8;
+  color: aliceblue;
+  transform:translateY(-15px)
+}
+</style>
+<body>
+   
+<div class="contact-us">
+  <h1>Contact Us</h1>
+  <p>Have a problem, a question, or want to send us a message of love? Don't hesitate to use this form to get in touch with us!</p>
+  
+  <form action="/data-processing-page" method="post">
+    <div>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Martin" required>
+    </div>
+    <div>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="youremail@mail.com" required>
+    </div>
+    <div>
+      <label for="subject">What is the subject of your message?</label>
+      <select name="subject" id="subject" required>
+        <option value="" disabled selected hidden>Choose the subject of your message</option>
+        <option value="account-problem">Problem with my account</option>
+        <option value="web-development">Web Development</option>
+        <option value="mobile-dev">Mobile App Development</option>
+        <option value="ui-ux-design">UI/UX Design</option>
+        <option value="order-tracking">Tracking my order</option>
+        <option value="other">Other...</option>
+      </select>
+    </div>
+    <div>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Hello, I am contacting you because...." required></textarea>
+    </div>
+    <div>
+      <button type="submit">Send my message</button>
+    </div>
+  </form>
+</div>
+
+</body>
+
+</html>

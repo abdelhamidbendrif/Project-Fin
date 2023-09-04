@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="website icon" type="png " href="vala-bleu-1.png">
+    <style>
+         body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+    }
+    .header .logo {
+      margin-left: 25px;
+    }
+    .header .logo:hover{
+      color: #717171;
+      transform: translateY(-1px);
+    }
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #ffffff;
+      margin-right: 20px;
+    }
+    .nav-items a {
+      text-decoration: none;
+      font-family: fantasy;
+      color: #1c1c1cb8;
+      transition: all 0.9s;
+      padding: 35px 22px;
+    }
+    .nav-items a:hover {
+      color: #00ff33;
+      transform: translateY(-5px);
+    }
+    .intro {
+      transition: all 0.4s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 570px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .intro:hover{
+      transform: translateY(-5px);
+    }
+    .intro h1 {
+      transition: all 0.9s;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      text-shadow: 20px 1px 20px rgba(255, 255, 255, 0.4) 
+    }
+    .intro p {
+      transition: all 0.9s;
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+    .intro:hover h1,
+    .intro:hover p{
+      color: #ffffff;
+      transform: translateY(-10px);
+    }
+    .btn22{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: #333333;
+    background-color: #01e1ff;
+    border: 1px;
+    border-radius: 5px;
+    transition: all 0.9s;
+    }
+    .btn22:hover{
+    transform: translateY(-7px);
+    background-color: #00ff33;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 3rem;
+        padding-left:30px;
+        margin-top: 90px;
+    }
+    .contact-text h2{
+        font-size: 90px;
+        line-height: 1;
+        text-align: center;
+        text-shadow: 2px 3px 4px ;
+    }
+    .contact-text h2 span{
+        color: #01e1ff;
+        transition: all 0.7s;
+    }
+    .contact:hover,.contact-text h2 span:hover{
+   transform: translateY(5px);
+    }
+    .contact-text h4{
+        margin: 15px 0;
+        color: rgb(36, 36, 36);
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .contact-text p{
+        color: rgb(75, 75, 75);;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+    .contact-list{
+        margin-bottom: 3rem;
+    }
+    .contact-list li{
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: block;
+    }
+  .contact-list i{
+    display: inline-block;
+    color: rgb(0, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 0.40s ease;
+  }
+  .contact-list li:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: aqua;
+  }
+  .contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size:20px;
+    color: rgb(26, 228, 228);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--1));
+  }
+  .contact-icons i:hover{
+    border:2px solid 00ff33;
+    background: #00ff33;
+    color: black;
+    box-shadow: 0 0 20px #00ff33;
+  }
+  .contact-form form{
+    position: relative;
+  }
+  .contact-form form input,form textarea{
+    outline: none;
+    width: 90%;
+    padding: 15px;
+    background: #ffffff;
+    border: 2px solid #606060;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .contact-form textarea{
+    resize: none;
+    height: 200px;
+  }
+  .contact-form form .send{
+    display: inline-block;
+    width: 95%;
+    padding: 14px 60px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border: #01e1ff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 608;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px aqua, 0 0 25px aqua;
+  }
+  .contact-form form .send:hover{
+    background: #00ff33;
+    box-shadow: 0 0 5px rgb(0, 0, 0),
+     0 0 25px #00ff33 , 0 0 50px #00ff33,
+     0 0 100px #00ff33 ,0 0 200px #00ff33;
+  }
+  .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+    .footer .copy {
+      color: #ffffff;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+    .bottom-links .links {
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      margin: 10px 0;
+    }
+    .bottom-links .links a {
+      color: #767676;
+      padding: 5px 20px;
+      transition: all 1s;
+    }
+
+    .bottom-links .links a:hover {
+      color: #c90808;
+      transform: translateY(-5px);
+    }
+    .loader{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eeeeee;
+      transition: opacity 4.5s ,visibility 4.5s;
+    }
+    .loader-hidden{
+      opacity: 0;
+      visibility: hidden;
+    }
+    .loader::after{
+      content: "";
+      width: 50px;
+      height: 50px;
+      border: 10px solid white;
+      border-top-color: #01e1ff;
+      border-radius: 50%;
+      animation: loading 0.9s ease infinite;
+    }
+    @keyframes loading{
+      from{
+        transform: rotate(0turn);
+      }
+      to{
+        transform: rotate(1turn);
+      }
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a  href="https://www.vala.ma/" class="logo">   
+             <img src="Screenshot (98).png" alt="logo" style="width: 150px; height: auto;">
+        </a>
+        <nav class="nav-items">
+          <a href="Home.html">Home</a>
+          <a href="About-Me.html">About</a>
+          <a href="Services.html">Services</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="loader"></div>
+      </header>
+      <main>
+        <div class="intro">
+          <h1>Contact</h1>
+          <p>Let's Work together</p>
+          <a href="problem us.html"><button class="btn22" >Send Message</button></a>
+        </div>
+        <section class="contact" id="contact">
+<div class="contact-text">
+    <h2>Contact <span>Me</span></h2>
+    <h4>START A PROJECT</h4>
+    <p>I’m available for freelance projects</p>
+
+    <div class="contact-list">
+    <li><i class='bx bx-send'></i>contact@gmail.com</li>
+    <li><i class='bx bx-phone'></i>+212613657370</li>
+    </div>
+    <div class="contact-icons">
+        <a href=""><i class='bx bxl-facebook'></i></a>
+        <a href=""><i class='bx bxl-twitter'></i></a>
+        <a href=""><i class='bx bxl-instagram'></i></a>
+        <a href=""><i class='bx bxl-linkedin'></i></a>
+    </div>
+</div>
+<div class="contact-form">
+    <form>
+        <input type="" placeholder="Enter Your Name" required>
+        <input type="email" placeholder="Enter Your Email" required>
+        <input type="" placeholder="Enter Your Subject">
+        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="submit" value="send" class="send">
+    </form>
+</div>
+        </section>
+        <footer class="footer">
+            <div class="copy">
+              &copy; 2023 VALA Developer.123 Main St, Agadir, Morocco
+            </div>
+            <div class="bottom-links">
+              <div class="links">
+                <span>Follow Us:</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+              <div class="links">
+                <span>Contact Us:</span>
+                <a href="mailto:bendrifhamiid@gamil.com">info@valadeveloper.com</a>
+                <a href="tel:+212613657370">+212613657370</a>
+              </div>
+            </div>
+            <script>
+              window.addEventListener("load",() =>{
+                const loader =document.querySelector(".loader");
+                loader.classList.add("loader-hidden");
+                loader.addEventListener("transitionend", () => {
+                  document.body.removeChild("loader");
+                })
+              })
+            </script>
+          </footer>
+</body>
+</html>
